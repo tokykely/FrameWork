@@ -11,6 +11,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import etu1993.framework.Mapping;
+import java.util.HashMap;
 
 /**
  *
@@ -19,6 +21,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet(name = "FrontServlet", urlPatterns = {"/"})
 public class FrontServlet extends HttpServlet {
 
+    HashMap<String,Mapping> MappingUrls;
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
      * methods.
