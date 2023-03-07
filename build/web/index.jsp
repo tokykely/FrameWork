@@ -13,7 +13,7 @@
     </head>
     <body>
         <form action="FrontServlet" method="get">
-            <input type="text" value="txt" >
+            <input type="text" name="txt">
             <input type="submit" value="Valider"><!-- comment -->
             
         </form>
