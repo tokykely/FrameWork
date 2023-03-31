@@ -1,0 +1,10 @@
+
+jar -cvf frameWork.jar -C /home/toky/NetBeansProjects/frameWork/build/classes .
+cp /home/toky/frameWork.jar /home/toky/NetBeansProjects/ProjetTest/build/web/WEB-INF/lib/
+cd /home/toky/Temp
+javac -d . Chauffeur.java
+javac -d . Fiara.java
+cd ~
+jar -cf Temp.war Temp
+cp /home/toky/Temp.war /home/toky/NetBeansProjects/ProjeTest/build/web/WEB-INF/classes
+
